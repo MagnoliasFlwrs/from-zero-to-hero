@@ -1,0 +1,49 @@
+
+@import url(./header.css);
+@import url(./banner.css);
+@import url(./about.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --description__links__color : rgb(63, 63, 63);
+    --title__color : #000000;
+}
+html {
+    font-size: 100%;
+    font-family: 'Manrope';
+    line-height: 3em;
+}
+h1 {
+    font-size: 2.5em;
+    color: var(--title__color);
+    font-style: normal;
+    font-weight: 700;
+}
+h2 {
+    font-size: 2em;
+    color: var(--title__color);
+    font-weight: 600;
+}
+p , a  {
+    font-size: 1.5em;
+    color: var(--description__links__color);
+}
+.content {
+    max-width: calc(1100px + 16px*2);
+    padding: 0 16px;
+    margin: 0 auto;
+}
+@media screen and (prefers-reduced-motion: no-preference) {
+    html,
+    body {
+      scroll-behavior: smooth;
+    }
+}
+
