@@ -1,0 +1,27 @@
+.skills {
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+.skills .content h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.skills__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--title__color);
+    margin: 20px 0 40px;
+}
+.skills__info__wrap > p , .skills__info__lang > p , .skills__info__education > p , .skills__info__education > h3 {
+    text-align: center;
+}
+@media (max-width:768px) {
+    .skills__info {
+        grid-template-columns: 1fr;
+    }
+}

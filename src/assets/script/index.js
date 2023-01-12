@@ -41,3 +41,28 @@ burgerLinks.forEach((link) => {
         document.body.classList.remove('_lock');
     })
 })
+
+
+const slideHandleClick = (btn) => {
+    const activeSlide = document.querySelector('[data-active]')
+    const allSlides = document.querySelectorAll('.slide')
+    const slides = [...allSlides]
+    const slideIndex = slides.indexOf(activeSlide)
+    let newIndex = slideIndex + btn
+    if (newIndex < 0) {
+        newIndex=allSlides.length - 1
+    }
+    if (newIndex >= allSlides.length) {
+        newIndex = 0
+    }
+    slides[newIndex].dataset.active = true
+    delete activeSlide.dataset.active
+}
+const nextSliderBtn = document.querySelector('.next')
+const prevSliderBtn = document.querySelector('.prev')
+nextSliderBtn.addEventListener('click' , () => {
+    slideHandleClick(1)
+})
+prevSliderBtn.addEventListener('click' , () => {
+    slideHandleClick(-1)
+})

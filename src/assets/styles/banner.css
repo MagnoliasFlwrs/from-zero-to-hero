@@ -1,14 +1,18 @@
 .banner {
     padding: 50px 0;
-    background-color: rgb(242 237 237);
+    background-color: var(--section__background);
 }
 .banner > .content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.banner > .content > h1 {
+
+.banner__wrapper {
     width: 60%;
+}
+.banner__wrapper a {
+    margin-top: 40px;
 }
 .banner__img__wrapper {
     width: 35%;
@@ -23,7 +27,7 @@
     .banner > .content {
         flex-direction: column;
     }
-    .banner > .content > h1 {
+    .banner__wrapper {
         width: 90%;
         margin-bottom: 30px;
         text-align: center;

@@ -12,13 +12,13 @@
     <header class="header">
 
         <div class="content ">
-            <h2 class="header__logo">CV</h2>
+            <a href="#"><h2 class="header__logo">CV</h2></a>
             <nav>
                 <ul class="header__navigation">
                     <li class="header__navigation__item"> <a href="#about"> Обо мне</a></li>
-                    <li class="header__navigation__item"> <a href=""> Образование</a></li>
-                    <li class="header__navigation__item"><a href=""> Skills</a></li>
-                    <li class="header__navigation__item"><a href=""> Контакты</a></li>
+                    <li class="header__navigation__item"> <a href="#facts"> Интересные факты</a></li>
+                    <li class="header__navigation__item"> <a href="#skills"> Навыки</a></li>
+                    <li class="header__navigation__item"><a href="#contacts"> Контакты</a></li>
                 </ul>
             </nav>
             <div class="burger-menu">
@@ -30,9 +30,9 @@
                 <div class="burger-menu__wrapper">
                     <ul class="burger__navigation">
                         <li class="burger__navigation__item"> <a href="#about"> Обо мне</a></li>
-                        <li class="burger__navigation__item"> <a href=""> Образование</a></li>
-                        <li class="burger__navigation__item"><a href=""> Skills</a></li>
-                        <li class="burger__navigation__item"><a href=""> Контакты</a></li>
+                        <li class="burger__navigation__item"> <a href="#facts"> Интересные факты</a></li>
+                        <li class="burger__navigation__item"> <a href="#skills"> Навыки</a></li>
+                        <li class="burger__navigation__item"><a href="#contacts"> Контакты</a></li>
                     </ul>
                 </div>
             </div>
@@ -42,7 +42,10 @@
     <main>
         <section class="banner">
             <div class="content">
-                <h1>Привет! <br> Меня зовут Марта и я Junior Frontend developer</h1>
+                <div class="banner__wrapper">
+                    <h1>Привет! <br> Меня зовут Марта и я Junior Frontend developer</h1>
+                    <a href="./src/assets/download/CV - Marta Savianok Frontend.pdf"  download="">Скачать CV</a>
+                </div>
                 <div class="banner__img__wrapper">
                     <img src="./src/assets/images/main__photo.jpg" alt="main-photo" width="350" height="450">
                 </div>
@@ -52,12 +55,130 @@
             <div class="content">
                 <a name="about"></a>
                 <h2>Обо мне</h2>
-                <p > Я влюбилась в волшебство строк кода еще в старших классах школы и вижу себя на позиции разработчика в компании с интересными проектами. После обучения в школе программирования продолжаю развиваться, проходя курсы и интенсивы от различных  школ и разработчиков, а также повышаю уровень английского.  Очень общительная, дружелюбная, люблю сложные задачи, фентези и Frame up.</p>
+                <div class="about__info">
+                    <div class="about__info__slider">
+                        <ul class="about__info__slider__slides">
+                            <li class="slide" data-active="">
+                                <img src="./src/assets/images/slider/5.jpg" alt="slider__image" width="400" height="500">
+                            </li>
+                            <li class="slide">
+                                <img src="./src/assets/images/slider/4.jpg" alt="slider__image" width="400" height="500">
+                            </li>
+                            <li class="slide">
+                                <img src="./src/assets/images/slider/3.jpg" alt="slider__image" width="400" height="500">
+                            </li>
+                            <li class="slide">
+                                <img src="./src/assets/images/slider/6.jpg" alt="slider__image" width="400" height="500">
+                            </li>
+                            <li class="slide">
+                                <img src="./src/assets/images/slider/8.jpg" alt="slider__image" width="400" height="500">
+                            </li>
+                        </ul>
+                        <div class="about__info__slider__nav">
+                            <button class="about__info__slider__btn prev">&#10094;</button>
+                            <button class="about__info__slider__btn next">&#10095;</button>
+                        </div>
+                    </div>
+                    <p > Я влюбилась в волшебство строк кода еще в старших классах школы и вижу себя на позиции разработчика в компании с интересными проектами. После обучения в школе программирования продолжаю развиваться, проходя курсы и интенсивы от различных  школ и разработчиков, а также повышаю уровень английского.  Очень общительная, дружелюбная, люблю сложные задачи, фентези и Frame up.</p>
+                </div>
+            </div>
+        </section>
+        <section class="facts">
+            <div class="content">
+                <a name="facts"></a>
+                <h2>Интересные факты</h2>
+                <div class="facts__info">
+                    <div class="facts__info__wrapper">
+                        <ul>
+                            <li>
+                                <p>Люблю раскрашивать картины по номерам </p>
+                            </li>
+                            <li>
+                                <p>7 лет назад бросила играть в онлайн игру, в которой нашла много друзей, с которыми общаюсь и по сей день </p>
+                            </li>
+                            <li>
+                                <p>Будучи медалисткой и олимпиадницей по физике в школе, умудрилась сдать ЦТ по той же физике на 16 баллов</p>
+                            </li>
+                            <li>
+                                <p>Мечтаю погладить лисичку</p>
+                            </li>
+                            <li>
+                                <p>Бесповоротно влюблена во Львов</p>
+                            </li>
+                            <li>
+                                <p>C нетерпением жду момента, когда смогу возобновить занятия танцами. и снова ходить в синяках :D</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="facts__info__images">
+                        <img src="./src/assets/images/facts/2.jpg" alt="photo__fact" width="300" height="200">
+                        <img src="./src/assets/images/facts/1.jpg" alt="photo__fact" width="250" height="350">
+                        <img src="./src/assets/images/facts/3.jpg" alt="photo__fact" width="300" height="200">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skills">
+            <a name="skills"></a>
+            <div class="content">
+                <h2>Навыки</h2>
+                <div class="skills__info">
+                    <div class="skills__info__education">
+                        <p>апрель 2022 - декабрь 2022</p>
+                        <h3>Frontend Developer</h3>
+                        <p>Teach Me Skills</p>
+                        <div class="line"></div>
+                        <p>2022 - 2019</p>
+                        <h3>инженер-программист</h3>
+                        <p>МГЭУ им. А.Д. Сахарова</p>
+                    </div>
+                    <div class="skills__info__wrap">
+                        <p>HTML</p>
+                        <p>CSS, SASS</p>
+                        <p>Javascript</p>
+                        <p>React.js</p>
+                        <p>Redux</p>
+                        <p>Redux Toolkit</p>
+                        <p>TypeScript</p>
+                    </div>
+                    <div class="skills__info__lang">
+                        <p>English - A2/B1</p>
+                        <p>начальные знания Phyton</p>
+                        <p>GitHub</p>
+                        <p>Axios</p>
+                        <p>работа с Api</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="content">
+                <a name="contacts"></a>
+                <h2>Контакты</h2>
+                <div class="contacts__info">
+                    <div class="contacts__info__wrapper">
+                        <img src="./src/assets/images/contacts/icons8-линкедин.svg" alt="LinkedIn" width="48" height="48">
+                        <a href="https://www.linkedin.com/in/martasavianok/">LinkedIn</a>
+                    </div>
+                    <div class="contacts__info__wrapper">
+                        <img src="./src/assets/images/contacts/icons8-github.svg" alt="GitHub" width="48" height="48">
+                        <a href="https://github.com/MagnoliasFlwrs">GitHub</a>
+                    </div>
+                    <div class="contacts__info__wrapper">
+                        <img src="./src/assets/images/contacts/icons8-телефон.svg" alt="Phone" width="48" height="48">
+                        <a href="tel:+375295830568">+375 29 583 05 68</a>
+                    </div>
+                    <div class="contacts__info__wrapper">
+                        <img src="./src/assets/images/contacts/icons8-почта.svg" alt="email" width="48" height="48">
+                        <a href="mailto:magnolia.sav@gmail.com">magnolia.sav@gmail.com</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <p>JS From Zero to Hero </p>
     </footer>
     <script src="./src/assets/script/index.js"></script>
 </body>
