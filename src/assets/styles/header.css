@@ -74,7 +74,7 @@
 	25% {
 		transform: scale3d(1.05, 1.05, 1.05);
         margin-bottom: 2px;
-        color: var(--section__background);
+        color: var(--description__links__color);
 	}
     50% {
 		transform: scale3d(1.1, 1.1, 1.1);
@@ -85,6 +85,7 @@
     75% {
 		transform: scale3d(1.05, 1.05, 1.05);
         margin-bottom: 2px;
+        color: var(--description__links__color);
 	}
 	100% {
 		transform: scale3d(1, 1, 1);
@@ -96,11 +97,11 @@
     font-weight: 900;
 }
 .header__logo:first-child {
-    animation: cv_move_down 3s infinite;
+    animation: cv_move_down 3s 5;
 
 }
 .header__logo:last-child {
-    animation: cv_move_up 3s infinite;
+    animation: cv_move_up 3s 5;
 }
 .burger-menu {
     display: none;
